@@ -88,64 +88,6 @@ public class CssSelector_ProjeDevami {
             Assert.fail("Liste boşaltılmamıştır.");
 
 
-     /*   if (driver.findElement(By.cssSelector("div#content>p")).isEnabled()) {
-
-            Assert.assertTrue(true);
-            System.out.println("İstek listesi boşaltılmıştır...");
-        }
-        else{
-            Assert.fail("Silme işlemi yapılamadı.");
-
-
-        }
-*/
-
-        
-
-/*
-        //ADD  TO CART
-        driver.findElement(By.cssSelector("table>tbody>tr>:nth-child(6)>button")).click();
-
-
-        Thread.sleep(2000);
-        driver.findElement(By.cssSelector("button[data-loading-text='Loading...']")).click();
-
-        WebElement price = driver.findElement(By.cssSelector("table.table.table-bordered>tbody>tr>:nth-child(2)"));
-
-        String sPrice = price.getText();
-
-        if (sPrice.equals("$101.00")) {
-
-            for (WebElement tableData : driver.findElements(By.cssSelector(".table-responsive>table>tbody>tr>td"))){
-                System.out.println(tableData.getText());
-            }
-
-            driver.quit();
-
-
-        } else if (!sPrice.equals("\"$101.00\"")) {
-            driver.findElement(By.cssSelector("strong>i.fa-shopping-cart")).click();
-
-            driver.findElement(By.cssSelector("input[size='1']")).clear();
-
-            Thread.sleep(2000);
-
-            driver.findElement(By.cssSelector("input[size='1']")).sendKeys("1");
-
-
-            //          Refresh
-            driver.findElement(By.cssSelector(".fa.fa-refresh")).click();
-
-            String total = driver.findElement(By.cssSelector("div.col-sm-4.col-sm-offset-8>table>tbody>:nth-child(2)>:nth-child(2)")).getText();
-
-            String expectedTotal = "$101.00";
-            Assert.assertEquals(expectedTotal, total);
-
-
-        /*    for (WebElement lastTable: driver.findElements(By.cssSelector(".table-responsive>.table.table-bordered>tbody>tr>td"))){
-
-                System.out.println(lastTable.getText());
-            }*/
 
         }
     }

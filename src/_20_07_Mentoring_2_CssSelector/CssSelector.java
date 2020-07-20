@@ -14,8 +14,6 @@ public class CssSelector {
 
         WebDriver driver = new FirefoxDriver();
 
-        //bunu kullandıgımda, sayfanın tamamen yüklenmesini bekleyip, belirtilen elemanı arıyor. kullanmazsam sayfa yüklenmeden elemanı aramaya calıstıgı için bulamıyor.NosuchElement
-        //   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
         driver.manage().window().maximize();
@@ -42,7 +40,7 @@ public class CssSelector {
 
 
 /*    todo  CLASS
-Kendimi şanslı hissediyorum kısmı
+
 
         .RNmpXc
         input[class=RNmpXc]
@@ -69,7 +67,7 @@ todo Starting the text ve Child mantıgı
 
 div[class^='R']
 
-        body nin tam altı,  data -iml = 1595111351742;
+
 div[id^=gb]
 
 div#searchform.jhp.big>nth-child(1)
