@@ -3,9 +3,6 @@ package _27_07_Mentoring_4_AlertWindow_Handle_Window;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.concurrent.TimeUnit;
 
 public class Alert2 {
     public static void main(String[] args) throws InterruptedException {
