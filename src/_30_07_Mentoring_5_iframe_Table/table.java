@@ -26,6 +26,10 @@ public class table {
         js.executeScript("arguments[0].scrollIntoView();",tablo);
 
         List<WebElement> satir = driver.findElements(By.xpath("//table[@class='wikitable sortable jquery-tablesorter']/tbody/tr"));
+
+        /*
+        todo     SATIRLARI YAZDIR
+         */
 //
 //        for (int i = 0; i <satir.size() ; i++) {
 //            System.out.println(satir.get(i).getText());
@@ -42,16 +46,22 @@ WebElement satir5 = driver.findElement(By.cssSelector("table.wikitable.sortable>
         System.out.println("Satır 5 not kısmı :   " + satir5.getText());
 
 
-List<WebElement> elements = driver.findElements(By.cssSelector(".jquery-tablesorter>tbody>tr:nth-child(10)>td:nth-child(-n+3)"));
-
-//.jquery-tablesorter>tbody>tr:nth-child(10)>td:nth-child(-n+3)
+List<WebElement> elements = driver.findElements(By.cssSelector(".wikitable>tbody>tr:nth-child(10)>td"));
 
 
-        for (int i = 0; i <elements.size() ; i++) {
+/*
+todo        Başka bir yolu
+
+.jquery-tablesorter>tbody>tr:nth-child(10)>td:nth-child(-n+3)    -- >   ilk üçünü belirtmek için
+ */
+
+//                                         4
+        for (int i = 0; i <elements.size()-1 ; i++) {
 
             System.out.print(elements.get(i).getText() + "  ");
 
         }
+
 
     }
 }
