@@ -1,0 +1,14 @@
+<suite name="My Tests">
+    <tests>
+       <test name="Test Class 1">
+       <classes>
+           <class name ="b_06_08_Mentoring_6_TestNG_Giris.basit_test1">        </class>
+       </classes>
+       </test>
+        <test name ="Test Class 2 ">
+         <classes>
+             <class name="b_06_08_Mentoring_6_TestNG_Giris.basit_test2">   </class>
+         </classes>
+        </test>
+    </tests>
+</suite>
