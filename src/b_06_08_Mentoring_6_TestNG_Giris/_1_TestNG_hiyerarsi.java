@@ -5,6 +5,16 @@ import org.testng.annotations.*;
 
 public class _1_TestNG_hiyerarsi {
 
+
+    @BeforeSuite
+    public void BeforeSuit(){
+
+        System.out.println("BEFORE SUİTE----------------");
+    }
+    @BeforeTest
+    public void beforeTest(){
+        System.out.println("Before Test");
+    }
 @BeforeClass
     public void BeforeClass(){
 
@@ -39,6 +49,17 @@ public void Test2(){
     public void AfterClass(){
 
     System.out.println("AFTER CLASS -------------------------   \n En son çalışır..");
+}
+
+
+@AfterTest
+public void AfterTest(){
+    System.out.println("---------------------------- AFTER TEST -----------------------------");
+}
+@AfterSuite
+    public void AfterSuite(){
+
+    System.out.println("-------------------AFTER SUİTE ------------------");
 }
 }
 
