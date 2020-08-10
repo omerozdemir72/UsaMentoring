@@ -1,0 +1,17 @@
+<suite name="Include And Exclude">
+
+    <test name="My Test 1 ">
+        <classes>
+            <class name="b_10_08_Mentoring_7_TestNG_Xml_File.xml_Methodlar">
+                <methods>
+
+                  <exclude name="Test2"></exclude>
+
+
+                </methods>
+
+            </class>
+        </classes>
+
+    </test>
+</suite>

@@ -1,0 +1,31 @@
+<suite name="Group Test">
+    <test name="MY TEST 1">
+
+        <groups>
+            <run>
+
+                <exclude name="grup 1"/>
+
+            </run>
+        </groups>
+        <classes>
+
+            <class name="b_10_08_Mentoring_7_TestNG_Xml_File.xml_Methodlar"/>
+        </classes>
+
+    </test>
+
+    <test name="MY TEST 2 ">
+        <groups>
+            <run>
+                <exclude name="grup 2"></exclude>
+
+            </run>
+        </groups>
+        <classes>
+            <class name="b_10_08_Mentoring_7_TestNG_Xml_File.xml_Methodlar"></class>
+        </classes>
+
+    </test>
+
+</suite>
