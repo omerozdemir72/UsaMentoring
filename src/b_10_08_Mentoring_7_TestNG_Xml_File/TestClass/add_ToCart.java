@@ -1,4 +1,4 @@
-package b_10_08_Mentoring_7_TestNG_Xml_File;
+package b_10_08_Mentoring_7_TestNG_Xml_File.TestClass;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -52,6 +53,24 @@ public class add_ToCart {
         Assert.assertEquals(cart.getText(),"1");
 
 
+    }
+    @Test
+    public void UrunSilme(){
+
+        driver.findElement(By.cssSelector("i.icon-trash")).click();
+
+        WebElement cart2 = driver.findElement(By.xpath("//span[@class='ajax_cart_no_product']"));
+
+        Assert.assertEquals(cart2.getText(),"(empty)");
+
+    }
+
+    @AfterClass
+    public void AfterClass() throws InterruptedException {
+
+        Thread.sleep(3000);
+
+        driver.quit();
     }
 
 

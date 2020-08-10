@@ -1,0 +1,18 @@
+<suite name="My Store Test" parallel="tests" thread-count="2">
+
+    <tests>
+        <test name="Genel Test">
+            <classes>
+                <class name="b_10_08_Mentoring_7_TestNG_Xml_File.TestClass.add_ToCart"/>
+            </classes>
+
+        </test>
+        <test name="Contact Us Test">
+            <classes>
+                <class name="b_10_08_Mentoring_7_TestNG_Xml_File.TestClass.ContactUs"/>
+            </classes>
+        </test>
+
+
+    </tests>
+</suite>
