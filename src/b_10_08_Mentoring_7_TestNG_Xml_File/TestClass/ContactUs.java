@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -33,7 +34,8 @@ public class ContactUs {
     }
 
     @Test
-    public void contactUsTest(){
+    @Parameters({"email","message","order"})
+    public void contactUsTest(String email, String message,String order){
 
         driver.findElement(By.xpath("//a[@title='Contact Us']")).click();
 
@@ -42,14 +44,13 @@ public class ContactUs {
 
 
 
-        driver.findElement(By.cssSelector("#email")).sendKeys("omer@gmail.com");
+        driver.findElement(By.cssSelector("#email")).sendKeys(email);
 
-        driver.findElement(By.cssSelector("#id_order")).sendKeys("asd123");
+        driver.findElement(By.cssSelector("#id_order")).sendKeys(order);
 
-        driver.findElement(By.cssSelector("#message")).sendKeys("Ürünümü 2 haftadır bekliyorum ancak gelmedi.");
+        driver.findElement(By.cssSelector("#message")).sendKeys(message);
 
         driver.findElement(By.cssSelector("#submitMessage")).click();
-
 
         WebElement contactUsMessage = driver.findElement(By.cssSelector(".alert.alert-success"));
 

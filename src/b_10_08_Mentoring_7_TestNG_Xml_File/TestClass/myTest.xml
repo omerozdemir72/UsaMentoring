@@ -8,6 +8,9 @@
 
         </test>
         <test name="Contact Us Test">
+            <parameter name="email" value="omer@gmail.com"/>
+            <parameter name="message" value="Ürünüm 2 haftadır gelmedi yazıklar olsun !!"/>
+            <parameter name="order" value="TL123"/>
             <classes>
                 <class name="b_10_08_Mentoring_7_TestNG_Xml_File.TestClass.ContactUs"/>
             </classes>
