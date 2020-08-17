@@ -1,0 +1,25 @@
+<suite name="Fiyat Filtreleme Testi" parallel="tests" thread-count="2">
+    <test name="Chrome Test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="sehir" value="Frankfurt"/>
+        <parameter name="minfiyat" value="0"/>
+        <parameter name="maxfiyat" value="500"/>
+        <parameter name="fiyatim" value="0"/>
+        <parameter name="fiyatim2" value="250"/>
+        <classes>
+            <class name="b_17_08_Mentoring_9_tekrar.hotels"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Test">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="sehir" value="Frankfurt"/>
+        <parameter name="minfiyat" value="0"/>
+        <parameter name="maxfiyat" value="500"/>
+        <parameter name="fiyatim" value="100"/>
+        <parameter name="fiyatim2" value="100"/>
+        <classes>
+            <class name="b_17_08_Mentoring_9_tekrar.hotels"/>
+        </classes>
+    </test>
+</suite>
